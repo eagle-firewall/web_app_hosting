@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>calculator</title>
+    <link rel='stylesheet' href='style.css'>
+  </head>
+  <body bgcolor='black'>
+    <center><font color='blue'><u>BULP ON/OFF</u></font></center><br>
+  <center><img id='image' src='bulpoff.jpg' height='363' width='221'><br><br>
+  <button onclick=document.getElementById('image').src='bulpoff.jpg'>Turn Off</button>
+  <button onclick=document.getElementById('image').src='bulpon.jpg'>Turn On</button>
+  </center>
+  <hr color='red'>
+  <center><font color='blue'><u>CALCULATOR</u></font></center><br>
+  <div class='up'>
+    <label for='w'>Enter no 1 </label><input type='number' id='w'></input><br>
+    <label for='x'>Enter no 2 </label><input type='number' id='x'></input><br>
+  </div><br><br>
+   <div class='mid'>
+    <button id='e' onclick='add()'>add</button><br>
+    <button id='e' onclick='sub()'>sub</button><br>
+    <button id='e' onclick='mul()'>multiply</button><br>
+    <button id='e' onclick='div()'>divide</button><br>
+  </div><br>
+    <h1 id='result'>Your output will be displayed here....</h1>
+    <hr color='red'>
+    <script src='script.js'></script>
+  </body>
+</html>
